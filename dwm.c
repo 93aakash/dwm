@@ -96,6 +96,7 @@ struct Client {
 	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen, issticky;
 	Client *next;
 	Client *snext;
+    Client *swallowing;
 	Monitor *mon;
 	Window win;
 };
